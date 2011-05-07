@@ -1,4 +1,5 @@
-Sposb dzialania
+Sposob dzialania
+================
 
 1. odpalamy glowna klasa parsujaca dana strone
  - Skladowe klasy:
@@ -14,8 +15,10 @@ Sposb dzialania
 
 
 Cel dzialania
+=============
+
 1. Wykres ilosci ofert w serwisie. Porownanie serwisow
-  |    _____          ___/\_ Cokupic 
+  |    _____          ___/\_ Citeam
   |___/     \    ____/  ____ Groupon
   |          \__/     _/
   | __/\    _/\______/

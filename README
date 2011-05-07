@@ -1,9 +1,12 @@
 Deals Stats
+===========
+
+Current project status: **TOTAL CRAP**
 
 Zastanawialo mnie jak, na tle innych serwisow z ofertami, radzi sobie Citeam.pl
-Nie mogac doszukac sie zadnej strony sesrwujacej potrzeb statystyki postanowilem
+Nie mogac doszukac sie zadnej strony sesrwujacej potrzebne statystyki postanowilem
 napisac je samemu.
 
 
-Libs needed:
+### Libs needed
 phpQuery - http://code.google.com/p/phpquery/

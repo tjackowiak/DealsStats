@@ -9,7 +9,7 @@ class CiteamParser
 		$mainPage = DealsStatsEnv::getEnvConfig('citeam.base-url');
 		$mainPage .= DealsStatsEnv::getEnvConfig('citeam.main-page');
 		$site = WebPageHarvester::harvestPage($mainPage);
-		// print_r($site);
+
 		phpQuery::newDocument($site['html']);
 		foreach( pq('ul.cityList li a') as $li )
 		{
@@ -38,4 +38,6 @@ class CiteamParser
 			echo "\t".pq($entry)->find('title')->text().PHP_EOL;
 		}
 	}
+
+	public function getOfferDetails
 }
