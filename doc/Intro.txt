@@ -1,0 +1,37 @@
+Sposb dzialania
+
+1. odpalamy glowna klasa parsujaca dana strone
+ - Skladowe klasy:
+   - metoda wyciagajaca glowne grupy ofert (np. miasta)
+   - metoda wyciagaja oferty dla podanej grupy
+    - oferta powinna zawierac:
+     - identyfikator
+     - tytul
+     - ilosc sprzedanych kuponow
+     - cene
+
+
+
+
+Cel dzialania
+1. Wykres ilosci ofert w serwisie. Porownanie serwisow
+  |    _____          ___/\_ Cokupic 
+  |___/     \    ____/  ____ Groupon
+  |          \__/     _/
+  | __/\    _/\______/
+  |/    \__/
+  |_________________________
+
+2. Wykres kumulacyjny sprzedawanych kuponow z podzialem na regiony
+                        ____ Krakow
+  |       _____________/  __ Warszawa
+  |      / ______________/
+  | ____/ /
+  |/_____/       ___________ Poznan
+  |/ ___________/
+  |_/_______________________
+
+3. Ilosc generowanej kasy (ilosc kupunow*wartosc) z podzialem na regiony
+ 3.1 Ilosc zarabianej kasy po sprawdzeniu prowizji 
+
+4. Najpopularniejsza oferta sposrod wszystkich wystawionych
