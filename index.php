@@ -10,14 +10,27 @@ require dirname(__FILE__).'/WebPageHarvester.php';
 require 'phpQuery.php';
 
 $conf = dealstats_read_config_file('default');
-// print_r($conf);
 DealsStatsEnv::setEnvConfig($conf);
 
 $ct = new CiteamParser();
 $groups = $ct->getDealsGroups();
 
+$offers = array();
 foreach($groups as $groupName => $groupData)
 {
-	$ct->getGroupOffers($groupName);
+	echo $groupName.PHP_EOL;
+	$offers += $ct->getGroupOffers($groupName);
 }
 
+$offers = isort($offers, 'sold');
+
+foreach($offers as $offer)
+{
+	echo "[${offer['id']}][${offer['status']}]\t${offer['title']}\n"
+	."================================================================\n"
+	."[${offer['priceRegular']} -> ${offer['pricePromo']}]\t"
+	."[Sold: ${offer['sold']}]\t"
+	."[Ending: ".date("Y-m-d H:i:s", $offer['endingTime'])."]"
+
+	."\n\n";	
+}
