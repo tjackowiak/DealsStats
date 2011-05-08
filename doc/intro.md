@@ -5,12 +5,20 @@ Skladowe klasy
 --------------
 1. metoda wyciagajaca glowne grupy ofert (np. miasta)
 2. metoda wyciagaja oferty dla podanej grupy
-  - szczegoly oferty:
-    - identyfikator
-    - tytul
-    - ilosc sprzedanych kuponow
-    - cene (oryginalna/promocja)
-    - status (aktywna/wyprzedana)
+Metoda musi zwrocic liste obiektow zawierajaca przynajmniej dwie informacje:
+  - id
+  - link 
+
+
+Szczegoly oferty
+----------------
+  - identyfikator
+  - tytul
+  - ilosc sprzedanych kuponow
+  - cena (oryginalna/promocja)
+  - status (aktywna/wyprzedana)
+  - data waznosci
+  - link
 
 Cykl zycia
 ----------
@@ -20,14 +28,17 @@ Cykl zycia
 4. weryfikujemy, czy pojawily sie nowe oferty
 4.1. jesli tak pobieramy o nich informacje
 5. aktualizujemy informacje o trwajacych ofertach:
- - ilosc sprzedanych kuponow
- - status (aktywna/wyprzedana)
+  - ilosc sprzedanych kuponow
+  - status (aktywna/wyprzedana)
 
- Zabezpieczenia
- --------------
- - jesli dla nowej oferty nie jestesmy w stanie odszuakc wszystkich informacji moze to oznaczac, ze zmienil sie format strony -> rzucamy blad i nie aktualizujemy danych
- - jesli dla posiadanej oferty nie jestesmy w stanie uaktualnic informacji -> rzucamy blad, tak jak wyzej
- - 
+Zabezpieczenia
+--------------
+  - jesli dla nowej oferty nie jestesmy w stanie odszuakc wszystkich informacji
+  moze to oznaczac, ze zmienil sie format strony -> rzucamy blad i nie
+  aktualizujemy danych
+  - jesli dla posiadanej oferty nie jestesmy w stanie uaktualnic informacji
+  -> rzucamy blad, tak jak wyzej
+ 
 
 
 
